@@ -6,7 +6,19 @@ $color-ribbon: #7DE3C8;
 span.glyphicon-remove {
   font-size: 2rem;
 }
-
+.row {
+  margin-top: 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#header{
+  background-color: #ff6461;
+}
+.notice-info {
+  margin-top: 1rem;
+  background: rgba(255, 113, 220, 0.58);
+  border:1px solid rgba(255, 113, 220, 0.63);
+}
 .button {
   border-top: 1px solid #8c3069;
   background: #d665ce;
