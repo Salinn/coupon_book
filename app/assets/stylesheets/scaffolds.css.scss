@@ -2,6 +2,7 @@ $White: #FFFFFF;
 $Pink: #ff94df;
 $FooterBackground: #161817;
 $color-ribbon: #7DE3C8;
+$H1_header: 4rem;
 
 span.glyphicon-remove {
   font-size: 2rem;
@@ -14,6 +15,32 @@ span.glyphicon-remove {
 #header{
   background-color: #ff6461;
   height: 7rem;
+}
+h1.header-text {
+  font-size: $H1_header;
+}
+
+@media(max-width: 480px) {
+  h1.header-text {
+    font-size: 2rem;
+  }
+  #header{
+    background-color: #ff6461;
+    height: 4rem;
+  }
+  .navbar{
+    height: 4rem;
+  }
+  .row {
+    margin-top: 6rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .notice-info {
+    background: rgba(255, 113, 220, 0.58);
+    border:1px solid rgba(255, 113, 220, 0.63);
+    margin-bottom: 1rem;
+  }
 }
 .navbar{
   height: 7rem;
