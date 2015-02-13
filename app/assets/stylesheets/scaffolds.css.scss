@@ -7,6 +7,11 @@ span.glyphicon-remove {
   font-size: 2rem;
 }
 
+.description-text{
+  margin-top: 15%;
+  margin-bottom: 1rem;
+}
+
 .card.effect__click.flipped .card__front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -49,11 +54,11 @@ span.glyphicon-remove {
 }
 
 .card__front {
-  background-color: #ff5078;
+  background-color: $Pink;
 }
 
 .card__back {
-  background-color: #1e1e1e;
+  background-color: $Pink;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
@@ -65,37 +70,7 @@ span.glyphicon-remove {
 .coupon-image {
   height: 200px;
   width: auto;
-}
-.button {
-  border-top: 1px solid #8c3069;
-  background: #d665ce;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9c3e73), to(#d665ce));
-  background: -webkit-linear-gradient(top, #9c3e73, #d665ce);
-  background: -moz-linear-gradient(top, #9c3e73, #d665ce);
-  background: -ms-linear-gradient(top, #9c3e73, #d665ce);
-  background: -o-linear-gradient(top, #9c3e73, #d665ce);
-  padding: 10px 20px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  box-shadow: rgba(0,0,0,1) 0 1px 0;
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
-  color: #ffffff;
-  font-size: 21px;
-  font-family: Georgia, serif;
-  text-decoration: none;
-  vertical-align: middle;
-}
-.button:hover {
-  border-top-color: #782863;
-  background: #782863;
-  color: #ccc;
-}
-.button:active {
-  border-top-color: #5c1b5a;
-  background: #5c1b5a;
+  margin-bottom: 1rem;
 }
 .clear{
   float: none;
