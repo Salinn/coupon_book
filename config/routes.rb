@@ -1,7 +1,6 @@
 CouponBook::Application.routes.draw do
   devise_for :users
   resources :coupons
-
   root :to => 'coupons#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

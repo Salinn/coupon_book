@@ -8,7 +8,8 @@
           </div>
           <div class="card__back">
             <div class="description-text">
-            <h1><%= coupon.description %></h1>
+              <h1><%= coupon.description %></h1>
+              <%= render 'used', coupon: coupon %>
             </div>
           </div>
 
