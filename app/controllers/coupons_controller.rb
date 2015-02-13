@@ -42,7 +42,7 @@ class CouponsController < ApplicationController
   def update
     respond_to do |format|
       if @coupon.update(coupon_params)
-        format.html { redirect_to coupons_path, notice: 'Coupon was successfully used!.' }
+        format.html { redirect_to root_path, notice: 'Coupon was successfully used!.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
