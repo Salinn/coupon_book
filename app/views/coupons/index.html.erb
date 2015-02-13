@@ -1,24 +1,33 @@
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-6 col-md-offset-3">
     <% @coupons.each do |coupon| %>
-        <div class="card">
-          <div class="left">
-          <h1><%= coupon.name %></h1>
-          <%= coupon.description %>
-          <%= coupon.picture %>
-          <div class="clear"></div>
+        <div class="card effect__click" align="center">
+          <div class="effect__click">
+            <h1 class="card_header"><%= coupon.name %></h1>
+            <%= image_tag coupon.picture, :class => "coupon-image" %>
           </div>
-          <div class="right">
-          <a><span id="<%=coupon.id%>" class="glyphicon glyphicon-remove"></span></a>
+          <div class="card__back">
+            <%= coupon.description %>
           </div>
-          <div class="clear"></div>
+
         </div>
     <% end %>
   </div>
 </div>
 
 <script>
-    $(function () {
-        $('#blah').removeClass('hidden');
-    });
+    (function() {
+        var cards = document.querySelectorAll(".card.effect__click");
+        for ( var i  = 0, len = cards.length; i < len; i++ ) {
+            var card = cards[i];
+            clickListener( card );
+        }
+
+        function clickListener(card) {
+            card.addEventListener( "click", function() {
+                var c = this.classList;
+                c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+            });
+        }
+    })();
 </script>

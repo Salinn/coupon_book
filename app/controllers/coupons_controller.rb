@@ -4,7 +4,7 @@ class CouponsController < ApplicationController
   # GET /coupons
   # GET /coupons.json
   def index
-    @coupons = Coupon.all
+    @coupons = Coupon.all.where(:used => false)
   end
 
   # GET /coupons/1
